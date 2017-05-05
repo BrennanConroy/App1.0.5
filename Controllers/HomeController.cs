@@ -15,6 +15,7 @@ namespace temp.Controllers
         {
             var assemblies = new List<string>
             {
+                {typeof(object).GetTypeInfo().Assembly.Location},
                 {typeof(Controller).GetTypeInfo().Assembly.Location},
                 {typeof(LoggerFactory).GetTypeInfo().Assembly.Location},
                 {typeof(IServiceCollection).GetTypeInfo().Assembly.Location}
